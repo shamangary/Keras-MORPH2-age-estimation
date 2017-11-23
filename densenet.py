@@ -1,3 +1,4 @@
+#https://github.com/titu1994/DenseNet
 '''DenseNet models for Keras.
 # Reference
 - [Densely Connected Convolutional Networks](https://arxiv.org/pdf/1608.06993.pdf)
