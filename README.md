@@ -10,7 +10,7 @@ Download MORPH dataset
 https://www.faceaginggroup.com/morph/ **Unzip it under './MORPH'**
 
 
-+ Step.2 Preprocess the dataset
++ Step.2 Preprocess the dataset **(change isPlot inside TYY_MORPH_create_db.py to True if you want to see the process)**
 ```
 python TYY_MORPH_create_db.py --output morph_db.npz
 ```
