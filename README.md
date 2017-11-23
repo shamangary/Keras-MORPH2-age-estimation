@@ -7,9 +7,7 @@ This project contains **Mobilenet and Densenet** with **regression and DEX frame
 ## How to run?
 + Step.1
 Download MORPH dataset
-https://www.faceaginggroup.com/morph/
-
-Unzip it under './MORPH'
+https://www.faceaginggroup.com/morph/ **Unzip it under './MORPH'**
 
 
 + Step.2 Preprocess the dataset
