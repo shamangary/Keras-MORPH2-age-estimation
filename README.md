@@ -1,7 +1,7 @@
 # Keras-MORPH-age-estimation
 Keras implementation for MORPH dataset age estimation.
 
-This project contains Mobilenet and Densenet with regression and DEX framework.
+This project contains **Mobilenet and Densenet** with **regression and DEX framework**.
 
 
 ## How to run?
@@ -26,9 +26,9 @@ KERAS_BACKEND=tensorflow python TYY_train_MORPH.py --input ./data/morph_db.npz
 + Validation ratio: 0.2
 
 + Evaluation metric:
-Mean-absoluate-error (MAE)
+Mean-absoluate-error (MAE) -> name: **val_pred_a_mean_absolute_error**
 
-+ Example:
++ Output example:
 ```
 pred_a_softmax_loss: 2.4073 - pred_a_loss: 9.4221 - pred_a_softmax_acc: 0.1183 - pred_a_mean_absolute_error: 9.4221 - val_loss: 2.4423 - val_pred_a_softmax_loss: 2.4423 - val_pred_a_loss: 9.4864 - val_pred_a_softmax_acc: 0.1339 - val_pred_a_mean_absolute_error: 9.4864
 ```
