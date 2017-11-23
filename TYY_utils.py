@@ -31,16 +31,6 @@ def load_data(mat_path):
 
     return d["image"], d["gender"][0], d["age"][0], d["db"][0], d["img_size"][0, 0], d["min_score"][0, 0]
 
-def load_data_npz(npz_path):
-    d = np.load(npz_path)
-
-    print(d["gender"].shape)
-    print(d["age"].shape)
-    print(d["db"])
-    print(d["img_size"])
-    print(d["min_score"])
-
-    return d["image"], d["gender"], d["age"], d["db"], d["img_size"], d["min_score"]
 
 def load_MORPH_data_npz(npz_path):
     d = np.load(npz_path)
