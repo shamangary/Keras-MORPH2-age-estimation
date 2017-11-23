@@ -32,7 +32,11 @@ Mean-absoluate-error (MAE) -> name: **val_pred_a_mean_absolute_error**
 ```
 pred_a_softmax_loss: 2.4073 - pred_a_loss: 9.4221 - pred_a_softmax_acc: 0.1183 - pred_a_mean_absolute_error: 9.4221 - val_loss: 2.4423 - val_pred_a_softmax_loss: 2.4423 - val_pred_a_loss: 9.4864 - val_pred_a_softmax_acc: 0.1339 - val_pred_a_mean_absolute_error: 9.4864
 ```
+## Parameters
 
++ DEX: num_neu is the output dimension of the classfication training part. Range of num_neu: [1~101]
++ Mobilenet: alpha is the paramters control the network size
++ Densenet: densenet_depth is the depth of the network (Obviously~~) 
 
 ## Dependencies
 + Keras
