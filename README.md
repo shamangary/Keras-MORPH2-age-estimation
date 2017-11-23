@@ -15,7 +15,7 @@ https://www.faceaginggroup.com/morph/ **Unzip it under './MORPH'**
 python TYY_MORPH_create_db.py --output morph_db.npz
 ```
 
-+ Step.3 Run the training and testing
++ Step.3 Run the training and evalutation **(change netType inside TYY_train_MORPH.py for different networks)**
 ```
 KERAS_BACKEND=tensorflow python TYY_train_MORPH.py --input ./morph_db.npz
 ```
