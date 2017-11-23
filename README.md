@@ -19,6 +19,15 @@ python TYY_MORPH_create_db.py --output morph_db.npz
 ```
 KERAS_BACKEND=tensorflow python TYY_train_MORPH.py --input ./data/morph_db.npz
 ```
+## Dependencies
++ Keras
++ Tensorflow
++ anaconda
++ python3
++ dlib
++ moviepy
++ pytables
+
 
 ## References
 + https://github.com/yu4u/age-gender-estimation
