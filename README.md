@@ -9,6 +9,8 @@ This project contains **Mobilenet and Densenet** with **regression and DEX frame
 Download MORPH dataset
 https://www.faceaginggroup.com/morph/ **Unzip it under './MORPH'**
 
+You have to apply for the dataset. Not easy to download it unfortunately :(
+
 
 + Step.2 Preprocess the dataset **(change isPlot inside TYY_MORPH_create_db.py to True if you want to see the process)**
 ```
