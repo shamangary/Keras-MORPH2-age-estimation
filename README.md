@@ -39,6 +39,7 @@ pred_a_softmax_loss: 2.4073 - pred_a_loss: 9.4221 - pred_a_softmax_acc: 0.1183 -
 + Tensorflow
 + anaconda
 + python3
++ opencv3
 + dlib
 + moviepy
 + pytables
