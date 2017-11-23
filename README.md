@@ -1,5 +1,6 @@
 # Keras-MORPH-age-estimation
-Keras implementation for MORPH dataset
+Keras implementation for MORPH dataset age estimation.
+
 This project contains Mobilenet and Densenet with regression and DEX framework.
 
 
@@ -20,5 +21,5 @@ KERAS_BACKEND=tensorflow python TYY_train_MORPH.py --input ./data/morph_db.npz
 ```
 
 ## References
-https://github.com/yu4u/age-gender-estimation
-https://github.com/titu1994/DenseNet
++ https://github.com/yu4u/age-gender-estimation
++ https://github.com/titu1994/DenseNet
