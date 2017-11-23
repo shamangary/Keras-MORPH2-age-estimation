@@ -1,3 +1,5 @@
+# This code is imported from the following project: https://github.com/asmith26/wide_resnets_keras
+
 import logging
 import sys
 import numpy as np
@@ -19,10 +21,7 @@ np.random.seed(2 ** 10)
 class TYY_MobileNet_reg:
     def __init__(self, image_size, alpha):
         
-        self._dropout_probability = 0
-        self._weight_decay = 0.0005
-        self._use_bias = False
-        self._weight_init = "he_normal"
+
         if K.image_dim_ordering() == "th":
             logging.debug("image_dim_ordering = 'th'")
             self._channel_axis = 1
@@ -56,10 +55,7 @@ class TYY_MobileNet_reg:
 class TYY_MobileNet_dex:
     def __init__(self, image_size, alpha, num_neu):
         
-        self._dropout_probability = 0
-        self._weight_decay = 0.0005
-        self._use_bias = False
-        self._weight_init = "he_normal"
+
         if K.image_dim_ordering() == "th":
             logging.debug("image_dim_ordering = 'th'")
             self._channel_axis = 1
@@ -101,10 +97,6 @@ class TYY_MobileNet_dex:
 class TYY_DenseNet_reg:
     def __init__(self, image_size, depth):
         
-        self._dropout_probability = 0
-        self._weight_decay = 0.0005
-        self._use_bias = False
-        self._weight_init = "he_normal"
         if K.image_dim_ordering() == "th":
             logging.debug("image_dim_ordering = 'th'")
             self._channel_axis = 1
@@ -135,10 +127,6 @@ class TYY_DenseNet_reg:
 class TYY_DenseNet_dex:
     def __init__(self, image_size, depth, num_neu):
         
-        self._dropout_probability = 0
-        self._weight_decay = 0.0005
-        self._use_bias = False
-        self._weight_init = "he_normal"
         if K.image_dim_ordering() == "th":
             logging.debug("image_dim_ordering = 'th'")
             self._channel_axis = 1
