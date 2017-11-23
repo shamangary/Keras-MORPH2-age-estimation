@@ -9,7 +9,7 @@ This project contains **Mobilenet and Densenet** with **regression and DEX frame
 Download MORPH dataset
 https://www.faceaginggroup.com/morph/ **Unzip it under './MORPH'**
 
-You have to apply for the dataset. Not easy to download it unfortunately :(
+You have to apply for the dataset. No easy way to download it unfortunately :(
 
 
 + Step.2 Preprocess the dataset **(change isPlot inside TYY_MORPH_create_db.py to True if you want to see the process)**
@@ -37,7 +37,7 @@ pred_a_softmax_loss: 2.4073 - pred_a_loss: 9.4221 - pred_a_softmax_acc: 0.1183 -
 ## Parameters
 
 + DEX: num_neu is the output dimension of the classfication training part. Range of num_neu: [1~101]
-+ Mobilenet: alpha is the paramters control the network size
++ Mobilenet: alpha is the paramters to control the network size. Recommended value of alpha: 1, 0.5, 0.25
 + Densenet: densenet_depth is the depth of the network (Obviously~~) 
 
 ## Dependencies
