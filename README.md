@@ -47,3 +47,5 @@ pred_a_softmax_loss: 2.4073 - pred_a_loss: 9.4221 - pred_a_softmax_acc: 0.1183 -
 ## References
 + https://github.com/yu4u/age-gender-estimation
 + https://github.com/titu1994/DenseNet
++ R. Rothe, R. Timofte, and L. V. Gool, "Deep expectation of real and apparent age from a single image without facial landmarks," IJCV, 2016.
++ https://github.com/fchollet/keras/blob/master/keras/applications/mobilenet.py
