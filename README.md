@@ -17,7 +17,7 @@ python TYY_MORPH_create_db.py --output morph_db.npz
 
 + Step.3 Run the training and testing
 ```
-KERAS_BACKEND=tensorflow python TYY_train_MORPH.py --input ./data/morph_db.npz
+KERAS_BACKEND=tensorflow python TYY_train_MORPH.py --input ./morph_db.npz
 ```
 
 ## Training and evaluation
