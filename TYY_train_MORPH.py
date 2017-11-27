@@ -13,6 +13,7 @@ import sys
 import numpy as np
 from keras.preprocessing.image import ImageDataGenerator
 from keras.applications.mobilenet import MobileNet
+import TYY_callbacks
 
 logging.basicConfig(level=logging.DEBUG)
 
@@ -26,7 +27,7 @@ def get_args():
                         help="path to input database mat file")
     parser.add_argument("--batch_size", type=int, default=128,
                         help="batch size")
-    parser.add_argument("--nb_epochs", type=int, default=30,
+    parser.add_argument("--nb_epochs", type=int, default=90,
                         help="number of epochs")
     parser.add_argument("--validation_split", type=float, default=0.2,
                         help="validation split ratio")
@@ -51,6 +52,7 @@ def main():
     y_data_a = age
 
     netType = 3
+    start_decay_epoch = [30,60]
 
     if netType == 1:
         alpha = 1
@@ -94,11 +96,12 @@ def main():
         f.write(model.to_json())
 
     mk_dir("checkpoints")
+    decaylearningrate = TYY_callbacks.DecayLearningRate(start_decay_epoch)
     callbacks = [ModelCheckpoint("checkpoints/weights.{epoch:02d}-{val_loss:.2f}.hdf5",
                                  monitor="val_loss",
                                  verbose=1,
                                  save_best_only=True,
-                                 mode="auto")]
+                                 mode="auto"), decaylearningrate]
 
     logging.debug("Running training...")
     
