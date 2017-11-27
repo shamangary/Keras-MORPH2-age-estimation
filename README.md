@@ -3,6 +3,9 @@ Keras implementation for MORPH dataset age estimation.
 
 This project contains **Mobilenet and Densenet** with **regression and DEX framework**.
 
+## Update(2017/11/27)
++ Change training default epoch to 90
++ Decay learning rate at epoch [30,60]
 
 ## How to run?
 + Step.1
