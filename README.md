@@ -3,24 +3,34 @@ Keras implementation for MORPH dataset age estimation.
 
 This project contains **Mobilenet and Densenet** with **regression and DEX framework**.
 
+
+## Update (2017/12/1)
++ Fix inconsistent label problem.
++ Add face align in preprocessing.
+
 ## Update(2017/11/27)
 + Change training default epoch to 90
 + Decay learning rate at epoch [30,60]
 
 ## How to run?
+
 + Step.1
-Download MORPH dataset
-https://www.faceaginggroup.com/morph/ **Unzip it under './MORPH'**
+Download landmarks from https://github.com/xyfeng/average_portrait
+Unzip it and move to landmarks folder
+
++ Step.2
+Download MORPH2 dataset
+https://www.faceaginggroup.com/morph/ **Unzip it under './morph2'**
 
 You have to apply for the dataset. No easy way to download it unfortunately :(
 
 
-+ Step.2 Preprocess the dataset **(change isPlot inside TYY_MORPH_create_db.py to True if you want to see the process)**
++ Step.3 Preprocess the dataset **(change isPlot inside TYY_MORPH_create_db.py to True if you want to see the process)**
 ```
 python TYY_MORPH_create_db.py --output morph_db.npz
 ```
 
-+ Step.3 Run the training and evalutation **(change netType inside TYY_train_MORPH.py for different networks)**
++ Step.4 Run the training and evalutation **(change netType inside TYY_train_MORPH.py for different networks)**
 ```
 KERAS_BACKEND=tensorflow python TYY_train_MORPH.py --input ./morph_db.npz
 ```
