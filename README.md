@@ -16,7 +16,7 @@ This project contains **Mobilenet and Densenet** with **regression and DEX frame
 
 + Step.1
 Download landmarks from https://github.com/xyfeng/average_portrait
-Unzip it and move to landmarks folder
+**Unzip it and move to landmarks folder**
 
 + Step.2
 Download MORPH2 dataset
