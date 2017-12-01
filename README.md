@@ -1,4 +1,4 @@
-# Keras-MORPH-age-estimation
+# Keras-MORPH2-age-estimation
 Keras implementation for MORPH2 dataset age estimation.
 
 This project contains **Mobilenet and Densenet** with **regression and DEX framework**.
